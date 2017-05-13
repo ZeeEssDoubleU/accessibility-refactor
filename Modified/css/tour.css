@@ -1,0 +1,45 @@
+/* Tour page styles */
+
+table {
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+}
+
+caption {
+    display: none;
+}
+
+th,
+td {
+    width: 200px;
+}
+
+.tour-dates-header {
+    display: inline;
+    margin: 0;
+}
+
+.pick {
+    width: 40px;
+    padding: 10px;
+    display: inline;
+}
+
+.flex-tour-dates {
+    flex-direction: column;
+}
+
+.flex-column {
+    text-align: center;
+    align-self: center;
+}
+
+.flex-tour-dates-header {
+    white-space: nowrap;
+}
+
+@media screen and (min-width: 840px) {
+    table {
+        width: auto;
+    }
+}

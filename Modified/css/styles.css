@@ -1,0 +1,240 @@
+/* Global Layout Set-up */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #BDC3C7;
+    background: #2d2b30;
+}
+
+h1 {
+    color: #FF6347;
+}
+
+*:focus {
+    outline-color: #FF6347;
+    outline-style: inset;
+    outline-offset: 5px;
+}
+
+
+/* Link Styles */
+
+a {
+    text-decoration: none;
+    color: #4ECDC4;
+    transition: color .5s;
+}
+
+a:hover {
+    color: #FF6347;
+}
+
+
+/* Section Styles */
+
+.main-nav {
+    width: 100%;
+    background: rgba(45, 43, 48, 0.8);
+    min-height: 30px;
+    padding: 10px;
+    position: fixed;
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.nav .name {
+    display: block;
+    margin-right: auto;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.nav li {
+    padding: 5px 10px 10px 10px;
+}
+
+.nav a {
+    transition: all .5s;
+}
+
+.nav a:hover {
+    color: #FF6347;
+}
+
+header {
+    text-align: center;
+    background: url('../img/concert02_no_text.jpg') no-repeat top center;
+    background-size: cover;
+    overflow: hidden;
+    padding-top: 60px;
+    display: table;
+    height: 350px;
+    width: 100%;
+}
+
+.banner-text {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.banner-title {
+    color: #2d2b30;
+    font-size: 3rem;
+    margin-top: -60px;
+}
+
+.banner-slogan {
+    color: #781125;
+    font-size: 1.5rem;
+    margin-top: -20px;
+}
+
+.name {
+    font-weight: 300;
+}
+
+.card {
+    margin: 30px;
+    padding: 20px 40px 40px;
+    text-align: left;
+    border-top: 4px solid #4ECDC4;
+    clear: both;
+    transition: border-color .5s;
+}
+
+.card:hover {
+    border-color: #FF6347;
+}
+
+.photo {
+    display: block;
+    width: 200px;
+    height: 0%;
+    margin: 0 auto;
+}
+
+.information {
+    width: 100%;
+    text-align: center;
+    /*display: inline-block;
+  position: absolute;*/
+}
+
+
+/* Footer styles */
+
+footer {
+    width: 100%;
+    min-height: 30px;
+    padding: 20px 0 40px 20px;
+}
+
+footer .copyright {
+    top: -8px;
+    font-size: .75em;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+a.social {
+    display: inline-block;
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    opacity: .4;
+    transition: all .5s;
+}
+
+a.twitter {
+    background-image: url(../img/twitter-32.png);
+}
+
+a.youtube {
+    background-image: url(../img/youtube-32.png);
+}
+
+a.spotify {
+    background-image: url(../img/spotify-32.png);
+}
+
+a.social:hover {
+    opacity: 1;
+}
+
+.clearfix {
+    clear: both;
+}
+
+
+/* Styles for larger screens */
+
+@media screen and (min-width: 840px) {
+    .flex {
+        display: -ms-flexbox;
+        /* TWEENER - IE 10 */
+        display: flex;
+        max-width: 1200px;
+        -ms-flex-pack: distribute;
+    }
+    header {
+        min-height: 470px;
+    }
+    .banner-title {
+        font-size: 4rem;
+    }
+    .banner-slogan {
+        font-size: 2rem;
+    }
+    .nav {
+        max-width: 1200px;
+        padding: 0 30px;
+    }
+    main {
+        padding-top: 20px;
+    }
+    main p {
+        line-height: 1.6em;
+    }
+    .card {
+        margin: 40px auto;
+        padding: 20px 40px 40px;
+        width: 80%;
+        max-width: 1000px;
+    }
+    .photo {
+        width: 30%;
+        margin: 20px 30px;
+    }
+    .information {
+        text-align: left;
+    }
+    footer {
+        font-size: 1.3em;
+        max-width: 1200px;
+        margin: 40px auto;
+    }
+}

@@ -1,0 +1,82 @@
+/* Survey page styles */
+
+.photo {
+    width: 60%;
+    padding: 10px;
+}
+
+form {
+    margin: 0 auto;
+    text-align: left;
+    display: inline-block;
+}
+
+fieldset {
+    padding: 0;
+    border: 0;
+}
+
+legend {
+    display: none;
+}
+
+input,
+select,
+textarea {
+    transition: background .5s, border-radius .5s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    background: #FF6347;
+    border-radius: 5px;
+    outline: none;
+}
+
+.container {
+    text-align: center;
+}
+
+.survey {
+    margin-top: 14px;
+}
+
+.newsletter {
+    text-align: right;
+    margin-top: 14px;
+}
+
+button {
+    color: white;
+    background-color: #4ECDC4;
+}
+
+button:active {
+    background-color: #FF6347;
+}
+
+label {
+    margin: 1rem 0;
+}
+
+.label-input {
+    display: block;
+}
+
+.label-radio {
+    display: inline;
+}
+
+.aria-describedby {
+    display: none;
+}
+
+
+/* Styles for larger screens */
+
+@media screen and (min-width: 840px) {
+    .photo {
+        width: 40%;
+    }
+}
